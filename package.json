@@ -1,0 +1,18 @@
+{
+  "name": "modulo_19",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./src/styles/styles.scss ./build/styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "g": "^2.0.1",
+    "less": "^4.2.0",
+    "less-watcher-compiler": "^0.2.6",
+    "sass": "^1.77.8"
+  }
+}

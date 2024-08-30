@@ -1,0 +1,54 @@
+$CorPrincipal: #000000;
+$CorSecundaria: #616161;
+$CorDestaque: #ffff42;
+$fontePrincipal: sans-serif;
+$LarguraTotal: 100%;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fontePrincipal;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $LarguraTotal;
+}
+
+.produtos {
+
+    .produto {
+        margin-top: 36px;
+        padding: 8px 8px 8px 8px;
+
+        &__imagem {
+        }
+    
+        &__nome {
+            text-align: center;
+            font-size: 1.2em;
+            padding: 6px 6px 6px 6px;
+            font-weight: 650;
+        }
+    
+        &__descricao {
+            text-align: center;
+            font-size: small;
+            color: $CorSecundaria;
+            padding: 6px 6px 6px 6px;
+        }
+    
+        &--em-destaque {
+            transition: background-color 0.5s ease, transform 0.3s ease;
+            
+            &:hover {
+                background-color: $CorDestaque;
+                border: 2px solid gold;
+                border-radius: 6px;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
